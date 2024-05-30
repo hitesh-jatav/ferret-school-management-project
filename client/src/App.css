@@ -1,0 +1,31 @@
+body {
+    background-color: #F7F6F4 !important;
+    overflow: hidden;
+    margin-left: 5px;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+
+.active {
+    color: #F7904B !important;
+}
+
+.app {
+    .sidebar-wrapp {
+        width: fit-content;
+    }
+
+    .outlet-wrapp {
+        width: 95%;
+        padding: 20px;
+        /* border: #F7904B 1px solid; */
+    }
+}

@@ -1,0 +1,160 @@
+.profile-wrapper {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #9DDE8B; */
+    /* display: flex; */
+
+    .nav-bar {
+        display: flex;
+        width: 100%;
+        /* justify-content: space-evenly; */
+        margin-bottom: 5px;
+        background-color: #9DDE8B;
+        padding: 10px;
+
+        .nav-link {
+            margin-right: 20px;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: darkgray;
+        }
+
+        .active-nav {
+            color: #F7904B !important;
+            font-weight: 600;
+        }
+    }
+
+    .profile-container {
+        height: fit-content;
+        border-right: 1px solid #9DDE8B;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        padding-bottom: 50px;
+
+        .profile-pic {
+            background-color: lightgray;
+            width: 200px;
+            max-width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-radius: 50%;
+
+            span {
+                font-size: 80px;
+                opacity: 0.3;
+            }
+
+            button {
+                position: absolute;
+                background-color: transparent;
+                border: none;
+                outline: none;
+
+                i {
+                    font-size: 20px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    .info-container {
+        margin-top: 10px;
+        /* justify-content:   ; */
+
+        .value-container {
+            span {
+                font-size: 11px;
+                color: darkgray;
+                opacity: 0.8;
+            }
+
+            input {
+                margin: 0px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: black;
+                font-weight: 200;
+            }
+        }
+
+        .info-line {
+            margin: 0px;
+            height: fit-content;
+
+            /* height: 13px; */
+            span {
+                background-color: inherit;
+                font-size: 13px;
+                color: darkgray;
+                font-weight: 700;
+                width: 100%;
+                padding: 4px;
+                /* border-bottom: 1px solid darkgray; */
+            }
+
+        }
+    }
+
+    .mark-assestments-wrapper {
+        padding: 10px;
+
+        .header {
+            color: darkgray;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        select {
+            background-color: transparent;
+            border-radius: 5px;
+            outline: none;
+            padding: 5px;
+            color: gray;
+            border: 1px solid darkgray;
+
+            option {
+                padding: 5px !important;
+            }
+        }
+
+        .list {
+            border-top: 1px solid lightgray;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    table {
+        margin: 0px;
+
+        thead {
+            tr {
+                th {
+                    background-color: lightgray !important;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+
+                th,
+                td {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}

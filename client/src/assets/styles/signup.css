@@ -1,0 +1,40 @@
+.signup-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        background-color: #181F3A;
+        padding: 30px;
+        /* border-radius: 25px; */
+
+        .logo {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            /* border: 1px solid black; */
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            margin-bottom: 5px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #673F69;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .links {
+        color: #fff !important;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}

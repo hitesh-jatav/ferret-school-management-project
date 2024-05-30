@@ -1,0 +1,106 @@
+.library-wrapper {
+    width: 100%;
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+
+        .header {
+            color: darkgray;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+    .library-container {
+        margin-top: 20px;
+
+        .nav-bar {
+            display: flex;
+            width: 100%;
+            /* justify-content: space-evenly; */
+            margin-bottom: 5px;
+            background-color: #9DDE8B;
+            padding: 10px;
+
+            .nav-link {
+                margin-right: 20px;
+                font-size: 11px;
+                cursor: pointer;
+
+                i {
+                    margin-left: 5px;
+                    font-size: 11px;
+                }
+            }
+
+            .nav-link:hover {
+                color: darkgray;
+            }
+
+            .active-nav {
+                color: #F7904B !important;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+    table {
+        margin: 0px;
+
+        thead {
+            tr {
+                th {
+                    background-color: lightgray !important;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+
+                th,
+                td {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+
+    .tab-header-nav {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
+
+        .input-div {
+            background-color: lightgray;
+            padding: 5px;
+
+            /* border: 1px solid darkgray; */
+            input {
+                outline: none;
+                background-color: transparent;
+                border: none;
+
+            }
+        }
+
+        .button-div {
+            height: max-content;
+
+            button,
+            select {
+                border: none;
+                margin-left: 5px;
+                background-color: lightgray;
+                padding: 5px;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
