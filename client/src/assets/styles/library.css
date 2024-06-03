@@ -20,7 +20,7 @@
             width: 100%;
             /* justify-content: space-evenly; */
             margin-bottom: 5px;
-            background-color: #9DDE8B;
+            background-color: #F7904B;
             padding: 10px;
 
             .nav-link {
@@ -39,8 +39,8 @@
             }
 
             .active-nav {
-                color: #F7904B !important;
-                font-weight: 600;
+                color: #2A355C !important;
+                /* font-weight: 600; */
             }
         }
     }

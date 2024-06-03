@@ -9,7 +9,7 @@ const UserSchema = new Schema({
     phone: { type: String },
     dob: { type: Date },
     city: { type: String },
-    role: { type: String, enum: ['admin', 'principal', 'teacher', 'parent'] },
+    role: { type: String, enum: ['admin', 'principal', 'teacher', 'parent', 'student'] },
     password: { type: String },
     gender: { type: String, enum: ["male", "female"] },
     isActive: { type: Boolean, default: false },

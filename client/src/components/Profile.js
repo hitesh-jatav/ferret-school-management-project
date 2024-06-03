@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import '../assets/styles/profile.css'
 import {
     Outlet, Link
@@ -6,10 +6,10 @@ import {
 const Profile = () => {
 
     const miniTabs = [
-        { name: 'Overview', path: 'overview' },
-        { name: 'Marks Assesments', path: 'marks-assesments' },
-        { name: 'Remarks & Actions', path: 'remarks-actions' },
-        { name: 'Abscences & Incidents', path: 'absence-incidents' },
+        { name: 'Overview', path: 'overview', icon: 'ri-fullscreen-line' },
+        { name: 'Marks Assesments', path: 'marks-assesments', icon: "ri-file-check-line" },
+        { name: 'Remarks & Actions', path: 'remarks-actions', icon: 'ri-shield-flash-line' },
+        { name: 'Abscences & Incidents', path: 'absence-incidents', icon: 'ri-find-replace-line' },
     ];
     const [activeTab, setActiveTab] = useState('overview')
 
@@ -22,9 +22,10 @@ const Profile = () => {
                         onClick={() => setActiveTab(tab.path)}
                         className={'nav-link ' + `${activeTab === tab.path ? 'active-nav' : ''}`}
                         key={tab.id}
-                    >{tab.name}</Link >)
+                    >{tab.name}
+                        <i className={tab.icon}></i></Link >)
                 }
-                
+
             </div>
 
             <Outlet />

@@ -3,9 +3,10 @@ import { RouterProvider } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import routes from './routes';
 import { useEffect } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-
 
   const checkUserSession = async () => {
     try {
@@ -31,9 +32,10 @@ function App() {
     checkUserSession()
   }, []);
 
-  return (
+  return (<>
     <RouterProvider router={routes} />
-  );
+    <ToastContainer />
+  </>);
 }
 
 export default App;

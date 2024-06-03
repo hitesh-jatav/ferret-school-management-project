@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { ALL_ROUTES } from '../constants/routes.constants.js'
 import '../assets/styles/side-bar.css'
 import { Link } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
 
 const SideBar = () => {
     const [pathname, setPathname] = useState(window.location.pathname)
     useEffect(() => {
         if (window?.location?.pathname !== pathname) setPathname(window.location.pathname)
     }, [pathname]);
+
     const logout = () => {
+        toast.success('Logout Successfully!');
         localStorage.clear();
         window.location.href = "/login";
     }
@@ -30,7 +32,7 @@ const SideBar = () => {
 
             <div className='link-tab'>
                 <button className={'link-button'} onClick={() => logout()} >
-                    <i class="ri-logout-box-r-line"></i>
+                    <i className="ri-logout-box-r-line"></i>
                 </button>
             </div>
         </div>

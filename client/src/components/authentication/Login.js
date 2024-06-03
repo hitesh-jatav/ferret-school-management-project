@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import Axios from '../../axios.js';
 import '../../assets/styles/login.css'
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Login = () => {
 
@@ -12,6 +13,7 @@ const Login = () => {
     try {
       let { data } = await Axios.post('/authentication/login', info)
       if (data.status === 200) {
+        toast.success(data.message);
         window.localStorage.setItem('token', data?.user?.token);
         window.localStorage.setItem('userId', data?.user?.userId);
         window.location.href = '/dashboard';

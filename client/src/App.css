@@ -1,5 +1,12 @@
+:root {
+    --brand-color: #181F3A;
+    --button-color: #2A355C;
+    --text-heading-color: #181F3A;
+    --background-color: #E2E4EB;
+}
+
 body {
-    background-color: #F7F6F4 !important;
+    background-color: #E2E4EB !important;
     overflow: hidden;
     margin-left: 5px;
     /* padding-left: 30px; */
@@ -27,5 +34,187 @@ a {
         width: 95%;
         padding: 20px;
         /* border: #F7904B 1px solid; */
+    }
+}
+
+
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.four {
+    width: 32.26%;
+}
+
+.three {
+    width: 100%;
+
+    .table-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.col {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+    margin-left: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.row {
+    margin: 30px 0;
+}
+
+/* ALL -4
+  S */
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* LOADER 4 */
+
+#loader-4 span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #3498db;
+    margin: 35px 5px;
+    opacity: 0;
+}
+
+#loader-4 span:nth-child(1) {
+    animation: opacitychange 1s ease-in-out infinite;
+}
+
+#loader-4 span:nth-child(2) {
+    animation: opacitychange 1s ease-in-out 0.33s infinite;
+}
+
+#loader-4 span:nth-child(3) {
+    animation: opacitychange 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes opacitychange {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+}
+
+
+.form-wrapper {
+    overflow: hidden;
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: 11px;
+        }
+
+        input,
+        select {
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            background-color: transparent;
+        }
+
+        p {
+            color: red;
+            font-size: 11px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+
+        .cancel-btn {
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-right: 5px;
+            background-color: #E2E4EB;
+            color: #181F3A;
+        }
+
+        .submit-btn {
+            cursor: pointer;
+            margin-left: 5px;
+            border: none;
+            padding: 5px 10px;
+            background-color: #2A355C;
+            color: #E2E4EB;
+        }
+    }
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.reload-icon {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

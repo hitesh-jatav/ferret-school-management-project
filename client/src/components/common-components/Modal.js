@@ -1,7 +1,6 @@
 import Reactm, { useState } from 'react'
 import Modal from 'react-modal';
 
-
 Modal.setAppElement('#root');
 
 const customStyles = {
@@ -13,17 +12,17 @@ const customStyles = {
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
         width: "50%",
-        backgroundColor: "#7aa9f5",
-        borderRadius: "10px",
-        height: "auto"
+        // backgroundColor: "#f",
+        padding: "0px",
+        height: "auto",
+        border: "1px solid lightgray"
+        // padding
     },
 };
 
 export const ModalComponent = ({
-    isOpen, setIsOpen, heading,
-    children
+    isOpen, setIsOpen, heading, children
 }) => {
-
     return (
         <div>
             <Modal
@@ -32,18 +31,23 @@ export const ModalComponent = ({
                 onRequestClose={() => setIsOpen(false)}
                 style={customStyles}
                 contentLabel="Example Modal"
+                shouldCloseOnOverlayClick={false}
             >
 
-                <div className='w-100' style={{}}>
+                <div className='w-100' >
                     {/* header section */}
-                    <div className='d-flex justify-content-between align-items-center mb-3'>
+                    <div className='d-flex justify-content-between align-items-center mb-3'
+                        style={{
+                            'color': '#181F3A',
+                            'fontWeight': '700',
+                            'padding': '10px',
+                            'borderBottom': "1px solid gray"
+                        }}>
                         <span className='bold'>{heading}</span>
-                        <button className='d-block border-none' onClick={() => setIsOpen(false)}>
-                            <i className='uil uil-times'></i>
-                        </button>
+                        <i className="ri-close-line cursor-pointer " onClick={() => setIsOpen(false)}></i>
                     </div>
 
-                    {children}
+                    <div className='' style={{ 'padding': '10px' }}>{children} </div>
 
                 </div>
             </Modal>
@@ -62,14 +66,14 @@ export const ConfirmBox = ({ isOpen, setIsOpen, heading, message, confirmFnc }) 
                 onRequestClose={() => setIsOpen(false)}
                 style={customStyles}
                 contentLabel="Example Modal"
+                shouldCloseOnOverlayClick={false}
             >
 
                 <div className='w-100' style={{}}>
-                    {/* header section */}
                     <div className='d-flex justify-content-between align-items-center mb-3'>
                         <span className='bold'>{heading || 'Confirmation'}</span>
                         <button className='d-block border-none' onClick={() => setIsOpen(false)}>
-                            <i className='uil uil-times'></i>
+                            <i className='uil uil-times pointer-cursor'></i>
                         </button>
                     </div>
 
