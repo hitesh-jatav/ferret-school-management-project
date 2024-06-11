@@ -11,7 +11,7 @@ const customStyles = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        width: "50%",
+        width: "fit-content",
         // backgroundColor: "#f",
         padding: "0px",
         height: "auto",
@@ -69,20 +69,21 @@ export const ConfirmBox = ({ isOpen, setIsOpen, heading, message, confirmFnc }) 
                 shouldCloseOnOverlayClick={false}
             >
 
-                <div className='w-100' style={{}}>
+                <div className='modal-container' style={{}}>
                     <div className='d-flex justify-content-between align-items-center mb-3'>
-                        <span className='bold'>{heading || 'Confirmation'}</span>
-                        <button className='d-block border-none' onClick={() => setIsOpen(false)}>
-                            <i className='uil uil-times pointer-cursor'></i>
-                        </button>
+                        <span className='modal-container-header'>{heading || 'Confirmation'}</span>
+                        <i className="ri-close-large-line cursor-pointer"
+                            onClick={() => setIsOpen(false)}></i>
                     </div>
 
 
-                    <span>{message || 'Are you sure, you want to continue?'}</span>
 
+                    <div className='modal-container-message'>
+                        <span >{message || 'Are you sure, you want to continue?'}</span>
+                    </div>
 
                     {/* footer */}
-                    <div className='d-flex justify-content-between'>
+                    <div className='d-flex justify-content-between modal-container-footer'>
                         <h6>{" "}</h6>
                         <div className='mt-2'>
                             <button className='mx-2 border-none btn btn-secondary' onClick={() => setIsOpen(false)}>No</button>

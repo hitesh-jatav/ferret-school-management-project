@@ -3,10 +3,11 @@ const UserModel = require('../models/user.model.js');
 
 const getTeachers = async (req, res) => {
     try {
-        let filter = {}
+        let filter = { school: req.user.school }
         if (req.query.word.trim()) {
             let word = req.query.word.trim().toLowerCase();
             filter = {
+                school: req.user.school,
                 $or: [
                     { fname: { $regex: new RegExp("^" + word, "i") } },
                     { lname: { $regex: new RegExp("^" + word, "i") } },

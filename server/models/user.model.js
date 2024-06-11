@@ -13,7 +13,9 @@ const UserSchema = new Schema({
     password: { type: String },
     gender: { type: String, enum: ["male", "female"] },
     isActive: { type: Boolean, default: false },
-    school: { type: Schema.Types.ObjectId },
+    school: { type: Schema.Types.ObjectId, ref: 'school' },
+    isPrincipal: { type: Boolean, default: false },
+    profilePic: { type: String }
 });
 
 module.exports = mongoose.model('user', UserSchema);

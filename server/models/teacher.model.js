@@ -15,6 +15,7 @@ const TeacherSchema = new Schema({
     nationality: { type: String, default: 'Indian' },
     adhaarNumber: { type: String },
     firstLanguage: { type: String },
+    isPrincipal: { type: Boolean, default: false },
     experience: [
         {
             school: { type: String },

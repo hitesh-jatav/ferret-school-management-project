@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Sunrise Elementary School",
+        "address": "123 Main Street",
+        "email": "john.doe@example.com",
+        "phone": "555-1234",
+        "level": "primary",
+        "modeOfEducation": "offline",
+        "isActive": true
+    }
+]

@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 
     form {
         background-color: #181F3A;
@@ -16,12 +17,15 @@
             /* border: 1px solid black; */
         }
 
-        input {
+        input,
+        select {
             padding: 10px;
             border: none;
             border-radius: 5px;
             outline: none;
             margin-bottom: 5px;
+            width: 100%;
+            background-color: #fff;
         }
 
         button {
@@ -29,6 +33,12 @@
             background-color: #673F69;
             border: none;
             outline: none;
+        }
+
+        .error {
+            color: red;
+            font-size: 11px;
+            margin-bottom: 5px;
         }
     }
 

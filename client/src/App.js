@@ -12,7 +12,7 @@ function App() {
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        if (['/login', '/signup'].includes(window.localStorage.pathname)) {
+        if (['/login', '/signup', '/verify-school'].includes(window.localStorage.pathname)) {
           window.location.href = "/dashboard";
         }
       } else {
@@ -20,7 +20,7 @@ function App() {
         if (!window.location.pathname) {
           window.location.href = "/login";
           return
-        } else if (['/login', '/signup'].includes(window.location.pathname)) return
+        } else if (['/login', '/signup', '/verify-school'].includes(window.location.pathname)) return
         window.location.href = "/login";
       }
     } catch (error) {

@@ -5,7 +5,7 @@ import '../../assets/styles/signup.css'
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
 
   const onSubmit = async (info) => {

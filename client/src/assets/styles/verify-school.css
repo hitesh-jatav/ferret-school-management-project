@@ -1,0 +1,54 @@
+.verify-school-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    .verify-school-container {
+        background-color: #181F3A;
+        padding: 30px;
+        width: 50%;
+
+        .heading {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    .input-group {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+
+        .label {
+            display: block !important;
+            font-size: 12px;
+        }
+
+        input,
+        select {
+            display: block;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .error {
+            display: block !important;
+            font-size: 12px;
+            color: red;
+        }
+
+    }
+
+    button {
+        border: none !important;
+        outline: none !important;
+        background-color: coral;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+}

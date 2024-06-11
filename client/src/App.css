@@ -205,7 +205,11 @@ a {
 }
 
 
-.reload-icon {
+.icon {
+    display: inline-block;
+}
+
+.rotate-loading {
     animation: rotate 2s linear infinite;
 }
 
@@ -217,4 +221,24 @@ a {
     to {
         transform: rotate(360deg);
     }
+}
+
+
+.modal-container {
+    padding: 20px;
+    font-size: 12px;
+    width: fit-content !important;
+
+    .modal-container-header {
+        font-weight: 700;
+    }
+
+    .modal-container-message {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .modal-container-footer {}
+
 }

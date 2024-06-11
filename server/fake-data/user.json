@@ -1,0 +1,122 @@
+[
+    {
+        "fname": "John",
+        "lname": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "1234567890",
+        "dob": "1990-05-15",
+        "city": "New York",
+        "role": "admin",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "male",
+        "isActive": true
+    },
+    {
+        "fname": "Jane",
+        "lname": "Doe",
+        "email": "jane.doe@example.com",
+        "phone": "9876543210",
+        "dob": "1988-10-20",
+        "city": "Los Angeles",
+        "role": "principal",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "female",
+        "isActive": true
+    },
+    {
+        "fname": "Michael",
+        "lname": "Smith",
+        "email": "michael.smith@example.com",
+        "phone": "5551234567",
+        "dob": "1975-03-08",
+        "city": "Chicago",
+        "role": "teacher",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "male",
+        "isActive": true
+    },
+    {
+        "fname": "Emily",
+        "lname": "Johnson",
+        "email": "emily.johnson@example.com",
+        "phone": "4449876543",
+        "dob": "1995-12-03",
+        "city": "Houston",
+        "role": "parent",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "female",
+        "isActive": true
+    },
+    {
+        "fname": "David",
+        "lname": "Brown",
+        "email": "david.brown@example.com",
+        "phone": "7771112222",
+        "dob": "2000-08-18",
+        "city": "Miami",
+        "role": "student",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "male",
+        "isActive": true
+    },
+    {
+        "fname": "Sarah",
+        "lname": "Miller",
+        "email": "sarah.miller@example.com",
+        "phone": "3335557777",
+        "dob": "1983-06-25",
+        "city": "Seattle",
+        "role": "teacher",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "female",
+        "isActive": true
+    },
+    {
+        "fname": "Daniel",
+        "lname": "Wilson",
+        "email": "daniel.wilson@example.com",
+        "phone": "2228889999",
+        "dob": "1992-09-12",
+        "city": "Dallas",
+        "role": "teacher",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "male",
+        "isActive": true
+    },
+    {
+        "fname": "Olivia",
+        "lname": "Taylor",
+        "email": "olivia.taylor@example.com",
+        "phone": "6664443333",
+        "dob": "1978-04-30",
+        "city": "Atlanta",
+        "role": "parent",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "female",
+        "isActive": true
+    },
+    {
+        "fname": "James",
+        "lname": "Anderson",
+        "email": "james.anderson@example.com",
+        "phone": "1112223333",
+        "dob": "2005-02-14",
+        "city": "Boston",
+        "role": "student",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "male",
+        "isActive": true
+    },
+    {
+        "fname": "Ava",
+        "lname": "Harris",
+        "email": "ava.harris@example.com",
+        "phone": "9996665555",
+        "dob": "1989-11-07",
+        "city": "San Francisco",
+        "role": "teacher",
+        "password": "$2b$10$LI1HcIVsTxWwldOq7CBK/.RlkhzpFcD.dONWSl81jAXDqjCr06E8u",
+        "gender": "female",
+        "isActive": true
+    }
+]

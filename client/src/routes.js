@@ -28,6 +28,8 @@ import Books from "./components/library/Books";
 import Lending from "./components/library/Lending";
 import Reports from "./components/library/Reports";
 import Fines from "./components/library/Fines";
+import SchoolSignup from "./components/authentication/SchoolSignup";
+import VerifySchool from "./components/authentication/VerifySchool";
 
 
 const ErrorBoundary = () => {
@@ -65,7 +67,11 @@ const routes = createBrowserRouter([
     },
     {
         path: '/signup',
-        element: <Signup />
+        element: <SchoolSignup />
+    },
+    {
+        path: '/verify-school',
+        element: <VerifySchool />
     },
     {
         path: "/",

@@ -11,6 +11,7 @@ const Profile = () => {
         { name: 'Remarks & Actions', path: 'remarks-actions', icon: 'ri-shield-flash-line' },
         { name: 'Abscences & Incidents', path: 'absence-incidents', icon: 'ri-find-replace-line' },
     ];
+
     const [activeTab, setActiveTab] = useState('overview')
 
     return (
@@ -21,7 +22,7 @@ const Profile = () => {
                     miniTabs.map((tab) => <Link to={'/profile/' + tab.path}
                         onClick={() => setActiveTab(tab.path)}
                         className={'nav-link ' + `${activeTab === tab.path ? 'active-nav' : ''}`}
-                        key={tab.id}
+                        key={'prfile-key-' + tab.path}
                     >{tab.name}
                         <i className={tab.icon}></i></Link >)
                 }

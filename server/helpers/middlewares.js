@@ -1,25 +1,33 @@
-// Middleware to verify JWT token
-// const jwt 
 const jwt = require('jsonwebtoken');
+const UserModel = require('../models/user.model.js');
 
-function verifyToken(req, res, next) {
+const verifyToken = async (req, res, next) => {
   try {
     const authorizationData = req.headers['authorization'];
-    let authObj = JSON.parse(authorizationData)
-    let token = authObj.token;
-    let userId = authObj.id;
-    if (!token) {
-      return res.send({ status: 401, message: 'Unauthorized' });
+    if (!authorizationData) {
+      return res.status(401).send({ status: 401, message: 'Unauthorized' });
+    }
+    const authObj = JSON.parse(authorizationData);
+    const token = authObj.token;
+    const userId = authObj.id;
+    if (!token || !userId) {
+      return res.status(401).send({ status: 401, message: 'Unauthorized' });
     }
     const decoded = jwt.verify(token, process.env.SECRET_KEY);
-    if (decoded.id !== userId) return res.send({ status: 401, message: 'Unauthorized' });
-    else next();
-
+    if (decoded.id !== userId) {
+      return res.status(401).send({ status: 401, message: 'Unauthorized' });
+    }
+    const user = await UserModel.findOne({ _id: userId }).lean();
+    if (!user) {
+      return res.status(404).send({ status: 404, message: 'User not found' });
+    }
+    req.user = user;
+    next();
   } catch (err) {
     return res.status(400).send('Invalid token');
   }
-}
+};
 
 module.exports = {
   verifyToken,
-}
+};
